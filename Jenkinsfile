@@ -6,6 +6,7 @@ node('linux_vm'){
 		checkout scm
 	}
 	stage('Run Tests'){
+		sh "whoami"
 		sh "pip install -r requirements.txt"
 		sh "python -m qa_1931_decorators_wrapper"
 	}
