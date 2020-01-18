@@ -8,7 +8,7 @@ node('linux_vm'){
 	stage('Run Tests'){
 		sh "whoami"
 		sh "pip install -r requirements.txt"
-		sh "python -m qa_1931_decorators_wrapper"
+		sh "python qa_1931_decorators_wrapper.yml"
 	}
 	stage('Test Results'){
 		//junit allowEmptyResults: true, testResults: 'test-reports/*.xml', healthScaleFactor: 0.0
