@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 import inspect
 import os
 import sys
@@ -8,9 +9,9 @@ import time
 import six
 import re
 from io import StringIO
-from unittest import TextTestRunner
+#from unittest import TextTestRunner
 from unittest import _TextTestResult
-from unittest import TestResult
+#from unittest import TestResult
 
 class _XMLTestResult(_TextTestResult):
     def _report_testcase(suite_name, test_result, xml_testsuite, xml_document):
