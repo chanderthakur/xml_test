@@ -1,4 +1,4 @@
-node('10_10_4_50'){
+node('linux_vm'){
 	stage('Clean Workspace'){
 		deleteDir()
 	}
